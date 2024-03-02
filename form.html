@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            font-family: sans-serif;
+       }
+       .respnav{
+            display: none;
+        }
+        .container{
+           display: flex;
+           flex-wrap: wrap;
+            align-items: center;
+            justify-content:center;
+            gap: 2rem;
+            height: 15vh;
+            border: solid transparent;
+            background-color:rgb(255, 255, 255);
+            /* position: fixed; 
+             top:0;
+            right:0;
+            left: 0;
+             width: 100%; */
+            
+        }
+        .ri-menu-3-line{
+            display: none;
+
+           
+        }
+        .linked{
+            color: #000;
+            text-decoration: none;
+
+        }
+        h1{
+            color:rgb(25,47,143) ;
+            margin-left: 10vw;
+
+        }
+        h2{
+         color:rgb(25,47,143) ;
+         position: relative;
+         top: 13vh;
+         left: 35vw;
+    
+        }
+        form{
+            margin-top: 20vh;
+        }
+       
+        label{   
+        color:rgb(25, 47, 143);
+        padding-left: 35vw;  
+        font-size: 1.5vw;
+        line-height: 8vh;
+            }
+      
+        
+            
+      input{
+        display: block;
+        margin: auto;
+        width: 30vw;
+        height: 7vh;
+        border: 0.5px solid rgb(116, 110, 110);
+        border-radius:4%;
+
+    }
+    ::placeholder{
+        font-size:1.3vw;
+        padding-left: 1.8vw;
+    }
+    .submit{
+         margin-top: 10vh;
+         margin-left: 44vw;
+         width: 10vw;
+         height: 7vh;
+         border: 2px solid rgb(25,47,143) ; ;
+         border-radius:35%;
+         font-size: 1.5vw;
+         color: #6d6c6c;
+
+
+                
+            }
+            .mainfooter{
+            width: 100%;
+            background-color: #f2f2f2;
+            margin-top: 5rem;
+
+        }
+        .foot2{
+            font-size: 0.9rem;
+            color: #272727;
+            line-height: 21px;
+            text-align: center;
+        }
+        .foot-1 a{
+            line-height: 40px;
+        padding-left: 25px;
+        text-decoration: none;}
+        
+         .foottt{
+            display: flex;
+            flex-wrap: wrap;
+             justify-content:center;
+             gap: 4.5rem;
+             margin-top: 4rem;
+            .pic2{
+                width: 3rem;
+                height: 3.5rem;
+                margin-left: 4rem;
+                margin-bottom: 1rem;
+            }
+            }
+            .footerpara{
+                font-size: 0.8rem;
+                color: #aaa5a5;
+                text-align: center;
+                line-height: 2.2rem;
+               
+
+            }
+            .tophr{
+                    margin-top: 2.2rem;
+                }
+                
+                .cs{
+                position: relative;
+                left: 11.2rem;
+            
+                }
+               .fapple{
+                padding-left: 10.5rem;
+                font-size: 0.8rem;
+               }
+               .footer-col{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4.5rem;
+                list-style: none;
+                a{
+                color:#6d6c6c ;
+                text-decoration: none;
+                font-size: 0.8rem;
+                line-height: 1.5rem;
+
+               }
+            }
+            .lastfoot-1 {
+            text-align: center;
+            font-size: 0.9rem;
+            } 
+        
+            .footer-col2{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+                gap: 2rem;
+                font-size: 0.9rem;
+                color:#6d6c6c;
+                line-height: 2rem;
+                
+            }
+  
+            @media (max-width:650px) {
+                
+                .container a{
+                    display:none;
+                }
+                .container i{
+                    font-size: 5vw;
+                }
+             .container{
+                width: 100%;
+                height: 100%;
+                gap:5vw;
+             }
+                .ri-apple-fill{
+                    margin-right: 60vw;
+                }
+                .ri-menu-3-line{
+                    display: initial;
+                }
+                .respnav{
+                    position: absolute;
+                    top: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    background-color: #f2f2f2;
+                    display:flex;
+                    flex-direction: column;
+                    gap: 4vh;
+                    z-index: 99;
+                    transition: all cubic-bezier(0.009,1,0.22);
+                }
+                .respnav a{
+                  font-size: 4vw;  
+                 padding: 0vw 10vw;
+                }
+                .respnav i{
+                 position: absolute;   
+                 top: 1%;
+                 right: 3%;
+                 font-size: 7vw;
+                }
+                label{  
+              font-size: 4vw;
+
+            }
+      input{
+        width: 50%;
+
+    }
+    ::placeholder{
+        font-size:3vw;
+    }
+    h1,h2{
+        font-size: 5vw;
+    }
+    body{
+        background-image: url(./img/sung-jin-cho-NBVi9zj2egU-unsplash.jpg);
+        background-size:contain;
+        background-repeat:repeat;
+        opacity: 0.8;
+
+        
+    }
+                
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">   
+        <i class="ri-apple-fill"></i>
+        <a class="linked item2"href="#">Store</a>
+        <a class="linked item3"href="#">Mac</a>
+        <a class="linked item4"href="#">Ipad</a>
+        <a class="linked item5"href="#">Iphone</a>
+        <a class="linked item6"href="#">Watch</a>
+        <a class="linked item7"href="#">Vision</a>
+        <a class="linked item8" href="#">Airpods</a>
+        <a class="linked item9" href="#">Tv&Home</a>
+        <a class="linked item10" href="#">Entertainment</a>
+        <a class="linked item11" href="#">Accessories</a>
+        <a class="linked item12"href="#">Support</a>
+        <i class="fa fa-search"></i>
+        <i class="ri-shopping-bag-line"></i>
+        <i class="ri-menu-3-line"></i>
+        </div>
+         <!-- responsive part -->
+         <div class="respnav">
+            <i class="ri-close-fill"></i>
+            <a class="linked item2"href="#">Store</a>
+            <a class="linked item3"href="#">Mac</a>
+            <a class="linked item4"href="#">Ipad</a>
+            <a class="linked item5"href="#">Iphone</a>
+            <a class="linked item6"href="#">Watch</a>
+            <a class="linked item7"href="#">Vision</a>
+            <a class="linked item8" href="#">Airpods</a>
+            <a class="linked item9" href="#">Tv&Home</a>
+            <a class="linked item10" href="#">Entertainment</a>
+            <a class="linked item11" href="#">Accessories</a>
+            <a class="linked item12"href="#">Support</a>
+            </div>
+            <!-- responsive part -->
+            <h1>Sign in for faster checkout.</h1>
+            <h2>Sign in to Apple Store</h2>
+    <form id="form" class="form">
+    <label> Full Name:</label> <input type="text" placeholder="Enter full Name" id="name"> 
+    <span id="name_error" style="position: absolute; left: 35vw; color: red;"></span>
+    <label> Email  :</label> <input type="email" placeholder=" Enter email Address" id="email">
+    <span id="email_error" style="position: absolute; left: 35vw; color: red;"></span>
+    <label>Password: </label><input type="password" placeholder="Enter Password" id="password">
+    <span id="pass_error" style="position: absolute; left: 35vw; color: red;"></span>
+    <button class="submit" id="button">submit</button>
+    </form>
+     <!------- footer --------->
+     <div class="mainfooter">
+
+        <div class="foottt">
+       
+        <div class="foot-1">
+        <img class="pic2" src="./img/footer1.png" alt="">
+        <h3 class="parag">Fast delivery or pickup</h3>
+         <p class="foot2">Enjoy two-hour delivery from an <br>
+            Apple Store, free delivery, or <br>
+            easy pickup. </p>
+        <a href="#">Learn more ></a>
+        </div>
+       
+        <div class="foot-1">
+        <img class="pic2" src="./img/footer2.png" alt="">
+        <h3 class="parag">Free and easy returns</h3>
+         <p class="foot2">Complete your return online or <br>
+            take it to an Apple Store.</p>
+        <a class="anchore" href="#">Learn more ></a>
+        </div>
+    
+        <div class="foot-1">
+        <img class="pic2" src="./img/footer3.png" alt="">
+        <h3 class="parag">Buy with Apple Card.</h3>
+         <p class="foot2">Get 3% Daily Cash back when <br>
+            you shop at Apple <br>
+              with Apple Card.</p>
+        <a href="#">Learn more ></a>
+        </div>
+    </div>
+    
+    
+    <br><hr class="tophr">
+    <p class="footerpara">We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to Apple.</p>
+    <hr class="bottomhr">
+    <i class="ri-apple-fill cs"></i> <span class="fapple">>   All Accessories</span>
+    
+    
+    <div class="footer-col">
+        <div class="col-1">
+        <!-- <ul> -->
+            <li><h5><a href="">Shop and Learn</a></h5></li>
+            <li><a href="">Store</a></li>
+            <li><a href="">Mac</a></li>
+            <li><a href="">Ipad</a></li>
+            <li><a href="">Iphone</a></li>
+            <li><a href="">watch</a></li>
+            <li><a href="">Vision</a></li>
+            <li><a href="">Airpods</a></li>
+            <li><a href="">tv & Home</a></li>
+            <li><a href="">AirTag</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="">Gift Cards</a></li><br>
+            <li><h5><a href="">Apple wallet</a></h5></li>
+            <li><a href="">Wallet</a></li>
+            <li><a href="">Apple Card</a></li>
+            <li><a href="">Apple Pay</a></li>
+            <li><a href="">Apple Cash</a></li>
+        <!-- </ul> -->
+    </div>
+    <div class="col-1">
+        <!-- <ul> -->
+            <li><h5><a href="">Account</a></h5></li>
+            <li><a href="">Manage your Apple ID</a></li>
+            <li><a href="">Apple Store Account</a></li>
+            <li><a href="">Icloud.com</a></li><br>
+            <li><h5><a href="">Entertainment</a></h5></li>
+            <li><a href="">Apple one</a></li>
+            <li><a href="">Apple Tv+</a></li>
+            <li><a href="">Apple Arcade</a></li>
+            <li><a href="">Apple fitness+</a></li>
+            <li><a href="">Apple News+</a></li>
+            <li><a href="">APPLe Podcast</a></li>
+            <li><a href="">Apple Books</a></li>
+            <li><a href="">App Store</a></li>
+            
+        <!-- </ul> -->
+    </div>
+    <div class="col-1">
+        <!-- <ul> -->
+            <li><h5><a href="">Apple Store</a></h5></li>
+            <li><a href="">Find a store</a></li>
+            <li><a href="">Genius Bar</a></li>
+            <li><a href="">Today at Apple</a></li>
+            <li><a href="">Apple Camp</a></li>
+            <li><a href="">Apple Store App</a></li>
+            <li><a href="">Refurisable</a></li>
+            <li><a href="">Apple Trade In</a></li>
+            <li><a href="">Financing</a></li>
+            <li><a href="">Carrier deals At Apple</a></li>
+            <li><a href="">Order Status</a></li>
+            <li><a href="">Shopping Help</a></li>
+            
+        <!-- </ul> -->
+    </div>
+    <div class="col-1">
+            <li><h5><a href="">For Business</a></h5></li>
+            <li><a href="">Apple & Business</a></li>
+            <li><a href="">Shop for Business</a></li>
+            <li><h5><a href="">For Education</a></h5></li><br>
+            <li><a href="">Apple & Education</a></li>
+            <li><a href="">Education for k-12</a></li>
+            <li><a href="">Shop for College</a></li>
+            <li><h5><a href="">For Healthcare</a></h5></li>
+            <li><a href="">Apple in Healthcare</a></li>
+            <li><a href="">Health on Apple Watch</a></li>
+            <li><a href="">Health Records on Iphone</a></li>
+            <li><h5><a href="">For Government</a></h5></li>
+            <li><a href="">Shop for Government</a></li>
+            <li><a href="">Shop for Veterans and Military</a></li>
+            
+        
+    </div>
+    <div class="col-1">
+    
+            <li><h5><a href="">Apple Values</a></h5></li>
+            <li><a href="">Accessability</a></li>
+            <li><a href="">Education</a></li>
+            <li><a href="">Environment</a></li>
+            <li><a href="">Inclusion and diversity</a></li>
+            <li><a href="">privacy</a></li>
+            <li><a href="">Racial Equity and justice</a></li>
+            <li><a href="">Supplier Responsibility</a></li>
+            <li><h5><a href="">About Apple</a></h5></li>
+            <li><a href="">Newsroom</a></li>
+            <li><a href="">Apple leadership</a></li>
+            <li><a href="">Career Opertunities</a></li>
+            <li><a href="">Investors</a></li>
+            <li><a href="">Ethics & Complain</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Contact Apple</a></li>
+                
+    </div>
+    </div>
+    <div class="lastfoot">
+    <p class="lastfoot-1">More ways to shop: <a href="">Find an Apple Store</a> or <a href=""> other retailer </a> near you. Or call 1‑800‑MY‑APPLE.</p>
+    </div>
+    <hr>
+    <div class="footer-col2">
+        <div class="subfooter2">Copyright © 2024 Apple Inc. All rights reserved.</div>
+        <div class="subfooter2">privacy policy |term of uses |sales and refunds |legal |site map </div>
+        <div class="subfooter2">United States</div>
+        
+    </div>
+    
+    </div>
+ 
+
+ <script src="./new.js"></script>  
+</body>
+</html>
