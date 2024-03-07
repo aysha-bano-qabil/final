@@ -13,10 +13,11 @@
             overflow-x: hidden;
             box-sizing: border-box;
             font-family: sans-serif;
+            scroll-behavior: smooth;
     
         }
         .respnav{
-            /* display: none; */
+            display: none;
         }
         .container{
            display: flex;
@@ -27,11 +28,11 @@
             height: 15vh;
             border: solid transparent;
             background-color:rgb(255, 255, 255);
-            position: fixed; 
+            /* position: fixed; 
              top:0;
             right:0;
             left: 0;
-             width: 100%;
+             width: 100%; */
             
         }
         .ri-menu-3-line{
@@ -107,7 +108,7 @@
             left:2rem;
             color: lightslategray;
         }
-        .bheader,.header3,.header4,.header5,.header6,.header7,.header8{
+        .header,.header3,.header4,.header5,.header6,.header7,.header8{
             text-align: center;
             line-height: 4rem;
         }
@@ -216,6 +217,7 @@
             justify-content: center;
             gap: 1rem;
             margin-top: 50px;
+            width: 100%;
         }
         
         
@@ -337,7 +339,6 @@
         }
         .mainfooter{
             width: 100%;
-            /* height: 1000vh; */
             background-color: #f2f2f2;
             margin-top: 5rem;
 
@@ -426,6 +427,7 @@
                 }
                 .container i{
                     font-size: 5vw;
+                    margin-top: 5vh;
                 }
              .container{
                 position: static;
@@ -434,17 +436,19 @@
                 gap:5vw;
              }
                 .ri-apple-fill{
-                    margin-right: 60vw;
+                    margin-right: 40vw;
+                    margin-top: 5vh;
                 }
                 .ri-menu-3-line{
                     display: initial;
+                    margin-top: 5vh;
                 }
                 .respnav{
                     position: absolute;
                     top: -100%;
                     width: 100%;
                     height: 100vh;
-                    background-color: #f2f2f2;
+                    background-color: #d4cfcf;
                     display:flex;
                     flex-direction: column;
                     gap: 4vh;
@@ -464,16 +468,16 @@
                 
                 
             .mobilepic{
-                /* display:block; */
+                background-size:cover;
                 width: 100%;
                 height:32vh;
             
                 }
                 .header1{
-                 position: absolute;
-                 top: 6vh;
-                 left: 1vw;
-                font-size: 0.5vw;
+                 position:absolute;   
+                 top: 22vh;
+                 left: 70vw;
+                font-size: 4vw;
         
                  }
 
@@ -501,7 +505,7 @@
        .brows-1 a{
         display: none;
        }
-    .header1,.header3,.header4,.header5,.header6,.header7,.header8{
+    .header3,.header4,.header5,.header6,.header7,.header8{
         font-size: 5vw;
     }
     hr{
@@ -604,7 +608,7 @@
         </div>
         <!-- responsive part -->
     <div class="imagecon">
-        <img class="mobilepic" src="" alt=>
+        <img class="mobilepic" src="./img/aalp-magsafe-header-202309.png" alt=>
         <h1 class="header1">Mix. Match. <br> MagSafe.</h1>
         <p class="para">Snap on a case, wallet, or <br> wireless charger.</p>
         <a class="imagecon1" href="#">Shop MagSafe ></a>
